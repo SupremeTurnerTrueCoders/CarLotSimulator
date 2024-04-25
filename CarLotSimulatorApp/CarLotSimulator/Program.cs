@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 
 namespace CarLotSimulator
 {
@@ -17,6 +18,26 @@ namespace CarLotSimulator
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
+
+            var johnsCar = new Car();
+            johnsCar.Make = "Ford";
+            johnsCar.Model = "Focus";
+            johnsCar.Year = 2013;
+            johnsCar.EngineNoise = "vroom";
+            johnsCar.HonkNoise = "Beep";
+            johnsCar.IsDrivable = true;
+
+            var stevesCar = new Car()
+            {
+                Year = 2019,
+            Make = "Tesla",
+            Model = "Cyber Truck",
+            EngineNoise = "....",
+            HonkNoise = "Brmpp",
+            IsDrivable = false,
+            };
+
+            var brettsCar = new Car(2013,"Honda","Civic","Vrooomm","Vruggga",true);
 
             //*************BONUS*************//
 
